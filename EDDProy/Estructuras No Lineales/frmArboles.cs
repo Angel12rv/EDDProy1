@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 //using GraphVizWrapper;
@@ -25,12 +26,13 @@ namespace EDDemo.Estructuras_No_Lineales
     {
         ArbolBusqueda miArbol;
         NodoBinario miRaiz;
-
+        private ArbolBusqueda arbol;
         public frmArboles()
         {
             InitializeComponent();
             miArbol = new ArbolBusqueda();
             miRaiz = null;
+            arbol = new ArbolBusqueda();
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
@@ -201,6 +203,122 @@ namespace EDDemo.Estructuras_No_Lineales
         private void txtDato_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnpodar_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("el arbol esta vacio");
+                return;
+            }
+
+            miArbol.PodarArbol(ref miRaiz);
+            miRaiz = null;
+
+            miArbol.strArbol = ""; 
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            {
+                int valorAEliminar = int.Parse(txtValor.Text);
+
+                miArbol.EliminarPredecesor(valorAEliminar, ref miRaiz);
+
+                miRaiz = miArbol.RegresaRaiz();
+
+                miArbol.strArbol = "";
+                miArbol.MuestraArbolAcostado(1, miRaiz);
+                txtArbol.Text = miArbol.strArbol;
+            }
+        }
+
+        private void btnSucesor_Click(object sender, EventArgs e)
+        {
+            int valorAEliminar = int.Parse(txtValor.Text);
+
+            miArbol.EliminarSucesor(valorAEliminar, ref miRaiz);
+
+            miRaiz = miArbol.RegresaRaiz();
+
+            miArbol.strArbol = "";
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+        }
+
+        private void btnAltura_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("Arbol vacio,Altura 0");
+                return;
+            }
+
+            int altura = miArbol.Altura(miRaiz);
+            MessageBox.Show("El arbol tiene una altura: " + altura);
+        }
+
+        private void btncontarhojas_Click(object sender, EventArgs e)
+        {
+            {
+                miRaiz = miArbol.RegresaRaiz();
+
+                if (miRaiz == null)
+                {
+                    MessageBox.Show("El arbol esta vacio");
+                    return;
+                }
+
+                int numHojas = miArbol.ContarHojas(miRaiz);
+                MessageBox.Show("El arbol tiene este numero de hojas: " + numHojas);
+            }
+        }
+
+        private void btncantidadnodos_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("Arbol Vacio");
+                return;
+            }
+            int numNodos = miArbol.ContarNodos(miRaiz);
+            MessageBox.Show("Numero de nodos:  " + numNodos);
+        }
+
+        private void btnlleno_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("Arbol vacio");
+                return;
+            }
+
+            if (miArbol.EsLleno(miRaiz))
+                MessageBox.Show("Es un arbol lleno");
+            else
+                MessageBox.Show("No es un arbol lleno");
+        }
+
+        private void btnRecorrerNiveles_Click(object sender, EventArgs e)
+        {
+            arbol.RecorrerPorNiveles(arbol.RegresaRaiz());
+            MessageBox.Show("Recorrido por niveles: " + arbol.strRecorrido);
+        }
+
+        private void btnEsBinarioCompleto_Click(object sender, EventArgs e)
+        {
+            bool esCompleto = arbol.EsBinarioCompleto(arbol.RegresaRaiz());
+            MessageBox.Show("El árbol es binario completo: " + (esCompleto ? "Sí" : "No"));
         }
     }
 }
