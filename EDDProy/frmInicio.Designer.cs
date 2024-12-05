@@ -51,6 +51,12 @@ namespace EDDemo
             this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shellSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.busquedaBinariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exponencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.factorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.finobacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sumarArregloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.torresHannoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,6 +149,13 @@ namespace EDDemo
             // 
             // recursividadToolStripMenuItem
             // 
+            this.recursividadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.busquedaBinariaToolStripMenuItem,
+            this.exponencialToolStripMenuItem,
+            this.factorialToolStripMenuItem,
+            this.finobacciToolStripMenuItem,
+            this.sumarArregloToolStripMenuItem,
+            this.torresHannoiToolStripMenuItem});
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
             this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
@@ -210,6 +223,42 @@ namespace EDDemo
             this.shellSortToolStripMenuItem.Text = "ShellSort";
             this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
             // 
+            // busquedaBinariaToolStripMenuItem
+            // 
+            this.busquedaBinariaToolStripMenuItem.Name = "busquedaBinariaToolStripMenuItem";
+            this.busquedaBinariaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.busquedaBinariaToolStripMenuItem.Text = "Busqueda Binaria";
+            // 
+            // exponencialToolStripMenuItem
+            // 
+            this.exponencialToolStripMenuItem.Name = "exponencialToolStripMenuItem";
+            this.exponencialToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exponencialToolStripMenuItem.Text = "Exponencial";
+            // 
+            // factorialToolStripMenuItem
+            // 
+            this.factorialToolStripMenuItem.Name = "factorialToolStripMenuItem";
+            this.factorialToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.factorialToolStripMenuItem.Text = "Factorial";
+            // 
+            // finobacciToolStripMenuItem
+            // 
+            this.finobacciToolStripMenuItem.Name = "finobacciToolStripMenuItem";
+            this.finobacciToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.finobacciToolStripMenuItem.Text = "Finobacci";
+            // 
+            // sumarArregloToolStripMenuItem
+            // 
+            this.sumarArregloToolStripMenuItem.Name = "sumarArregloToolStripMenuItem";
+            this.sumarArregloToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sumarArregloToolStripMenuItem.Text = "Sumar Arreglo";
+            // 
+            // torresHannoiToolStripMenuItem
+            // 
+            this.torresHannoiToolStripMenuItem.Name = "torresHannoiToolStripMenuItem";
+            this.torresHannoiToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.torresHannoiToolStripMenuItem.Text = "Torres Hannoi";
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
@@ -258,6 +307,12 @@ namespace EDDemo
         private ToolStripMenuItem quickSortToolStripMenuItem;
         private ToolStripMenuItem radixToolStripMenuItem;
         private ToolStripMenuItem shellSortToolStripMenuItem;
+        private ToolStripMenuItem busquedaBinariaToolStripMenuItem;
+        private ToolStripMenuItem exponencialToolStripMenuItem;
+        private ToolStripMenuItem factorialToolStripMenuItem;
+        private ToolStripMenuItem finobacciToolStripMenuItem;
+        private ToolStripMenuItem sumarArregloToolStripMenuItem;
+        private ToolStripMenuItem torresHannoiToolStripMenuItem;
     }
 }
 

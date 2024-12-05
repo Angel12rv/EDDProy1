@@ -8,5 +8,13 @@ namespace EDDemo.Recursividad.Clases
 {
     internal class Finobacci
     {
+        public static int CalcularFibonacci(int n)
+        {
+            if (n <= 0) return 0;
+            if (n == 1) return 1;
+
+            // Llamadas recursivas
+            return CalcularFibonacci(n - 1) + CalcularFibonacci(n - 2);
+        }
     }
 }
