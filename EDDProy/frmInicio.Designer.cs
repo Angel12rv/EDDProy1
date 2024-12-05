@@ -289,12 +289,14 @@ namespace EDDemo
             this.secuencialToolStripMenuItem.Name = "secuencialToolStripMenuItem";
             this.secuencialToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.secuencialToolStripMenuItem.Text = "Secuencial";
+            this.secuencialToolStripMenuItem.Click += new System.EventHandler(this.secuencialToolStripMenuItem_Click);
             // 
             // binariaToolStripMenuItem
             // 
             this.binariaToolStripMenuItem.Name = "binariaToolStripMenuItem";
             this.binariaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.binariaToolStripMenuItem.Text = "Binaria";
+            this.binariaToolStripMenuItem.Click += new System.EventHandler(this.binariaToolStripMenuItem_Click);
             // 
             // hashToolStripMenuItem
             // 

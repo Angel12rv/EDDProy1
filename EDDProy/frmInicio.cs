@@ -176,5 +176,16 @@ namespace EDDemo
             frmBusquedaHash.MdiParent = this;
             frmBusquedaHash.Show();
         }
+
+        private void binariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void secuencialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaSecuencial frmBusquedaSecuencial = new frmBusquedaSecuencial();
+            frmBusquedaSecuencial.MdiParent = this;
+            frmBusquedaSecuencial.Show();
+        }
     }
 }

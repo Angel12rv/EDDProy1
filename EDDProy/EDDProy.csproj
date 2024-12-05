@@ -74,12 +74,26 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Busqueda\Clases\Binaria.cs" />
     <Compile Include="Busqueda\Clases\BusquedaHash.cs" />
+    <Compile Include="Busqueda\Clases\BusquedaSecuencial.cs" />
+    <Compile Include="Busqueda\frmBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda\frmBinaria.Designer.cs">
+      <DependentUpon>frmBinaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Busqueda\frmBusquedaHash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Busqueda\frmBusquedaHash.Designer.cs">
       <DependentUpon>frmBusquedaHash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda\frmBusquedaSecuencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda\frmBusquedaSecuencial.Designer.cs">
+      <DependentUpon>frmBusquedaSecuencial.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras Lineales\Clases\Cola.cs" />
     <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
@@ -231,8 +245,14 @@
     <Compile Include="Recursividad\frmTorresHannoi.Designer.cs">
       <DependentUpon>frmTorresHannoi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Busqueda\frmBinaria.resx">
+      <DependentUpon>frmBinaria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Busqueda\frmBusquedaHash.resx">
       <DependentUpon>frmBusquedaHash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busqueda\frmBusquedaSecuencial.resx">
+      <DependentUpon>frmBusquedaSecuencial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\frmcola.resx">
       <DependentUpon>frmcola.cs</DependentUpon>
