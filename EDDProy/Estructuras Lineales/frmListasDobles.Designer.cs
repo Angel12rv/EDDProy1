@@ -52,6 +52,7 @@
             this.label4.Size = new System.Drawing.Size(59, 16);
             this.label4.TabIndex = 25;
             this.label4.Text = "Posicion";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -61,6 +62,7 @@
             this.label3.Size = new System.Drawing.Size(59, 16);
             this.label3.TabIndex = 24;
             this.label3.Text = "Posicion";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -70,6 +72,7 @@
             this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 23;
             this.label2.Text = "Valor";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -79,34 +82,39 @@
             this.label1.Size = new System.Drawing.Size(39, 16);
             this.label1.TabIndex = 22;
             this.label1.Text = "Valor";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(220, 294);
+            this.textBox4.Location = new System.Drawing.Point(220, 174);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 22);
             this.textBox4.TabIndex = 21;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(220, 174);
+            this.textBox3.Location = new System.Drawing.Point(348, 236);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 20;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(358, 236);
+            this.textBox2.Location = new System.Drawing.Point(220, 237);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 19;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(220, 237);
+            this.textBox1.Location = new System.Drawing.Point(220, 294);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 18;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button5
             // 
@@ -166,6 +174,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(281, 308);
             this.listBox1.TabIndex = 26;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // frmListasDobles
             // 
@@ -188,6 +197,7 @@
             this.Controls.Add(this.button1);
             this.Name = "frmListasDobles";
             this.Text = "frmListasDobles";
+            this.Load += new System.EventHandler(this.frmListasDobles_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

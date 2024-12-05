@@ -51,5 +51,10 @@ namespace EDDemo.Estructuras_Lineales
 
             circular.Eliminar(posicion);
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
