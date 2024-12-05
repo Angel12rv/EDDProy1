@@ -36,6 +36,9 @@ namespace EDDemo
             this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasNoLibealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.simpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dobleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.circularesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +51,7 @@ namespace EDDemo
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(911, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(911, 26);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,20 +69,25 @@ namespace EDDemo
             // pilasToolStripMenuItem
             // 
             this.pilasToolStripMenuItem.Name = "pilasToolStripMenuItem";
-            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.pilasToolStripMenuItem.Text = "Pilas";
             this.pilasToolStripMenuItem.Click += new System.EventHandler(this.pilasToolStripMenuItem_Click);
             // 
             // colasToolStripMenuItem
             // 
             this.colasToolStripMenuItem.Name = "colasToolStripMenuItem";
-            this.colasToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.colasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.colasToolStripMenuItem.Text = "Colas";
+            this.colasToolStripMenuItem.Click += new System.EventHandler(this.colasToolStripMenuItem_Click);
             // 
             // listasToolStripMenuItem
             // 
+            this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.simpleToolStripMenuItem,
+            this.dobleToolStripMenuItem,
+            this.circularesToolStripMenuItem});
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.listasToolStripMenuItem.Text = "Listas";
             // 
             // estructurasNoLibealesToolStripMenuItem
@@ -87,15 +95,34 @@ namespace EDDemo
             this.estructurasNoLibealesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arbolesToolStripMenuItem});
             this.estructurasNoLibealesToolStripMenuItem.Name = "estructurasNoLibealesToolStripMenuItem";
-            this.estructurasNoLibealesToolStripMenuItem.Size = new System.Drawing.Size(169, 28);
+            this.estructurasNoLibealesToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
             this.estructurasNoLibealesToolStripMenuItem.Text = "Estructuras no lineales";
             // 
             // arbolesToolStripMenuItem
             // 
             this.arbolesToolStripMenuItem.Name = "arbolesToolStripMenuItem";
-            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
             this.arbolesToolStripMenuItem.Text = "Arboles";
             this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
+            // 
+            // simpleToolStripMenuItem
+            // 
+            this.simpleToolStripMenuItem.Name = "simpleToolStripMenuItem";
+            this.simpleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.simpleToolStripMenuItem.Text = "Simple";
+            this.simpleToolStripMenuItem.Click += new System.EventHandler(this.simpleToolStripMenuItem_Click);
+            // 
+            // dobleToolStripMenuItem
+            // 
+            this.dobleToolStripMenuItem.Name = "dobleToolStripMenuItem";
+            this.dobleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dobleToolStripMenuItem.Text = "Doble";
+            // 
+            // circularesToolStripMenuItem
+            // 
+            this.circularesToolStripMenuItem.Name = "circularesToolStripMenuItem";
+            this.circularesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.circularesToolStripMenuItem.Text = "Circulares";
             // 
             // frmInicio
             // 
@@ -105,7 +132,7 @@ namespace EDDemo
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmInicio";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmInicio_Load);
@@ -124,6 +151,9 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem listasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estructurasNoLibealesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arbolesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem simpleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dobleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem circularesToolStripMenuItem;
     }
 }
 

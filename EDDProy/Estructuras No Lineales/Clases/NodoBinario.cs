@@ -11,6 +11,7 @@ namespace EDDemo.Estructuras_No_Lineales
         public int Dato;
         public NodoBinario Izq;
         public NodoBinario Der;
+        public NodoBinario Sig;
 
         public NodoBinario(int Dato)
         {
@@ -19,5 +20,6 @@ namespace EDDemo.Estructuras_No_Lineales
             this.Der = null;
             // CAMBIO 2
         }
+        public NodoBinario() { }
     }
 }
