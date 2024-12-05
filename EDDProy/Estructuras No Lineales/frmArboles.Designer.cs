@@ -56,6 +56,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnlleno = new System.Windows.Forms.Button();
             this.btnpodar = new System.Windows.Forms.Button();
             this.txtValor = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -344,11 +345,21 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtValor.Size = new System.Drawing.Size(72, 22);
             this.txtValor.TabIndex = 26;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(282, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Arboles";
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 620);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.btnpodar);
             this.Controls.Add(this.btnlleno);
@@ -415,5 +426,6 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Button btnlleno;
         private System.Windows.Forms.Button btnpodar;
         private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Label label1;
     }
 }
