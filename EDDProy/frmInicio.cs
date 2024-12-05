@@ -67,5 +67,12 @@ namespace EDDemo
             frmlista.MdiParent = this;
             frmlista.Show();
         }
+
+        private void circularesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListasCirculares frmlista = new frmListasCirculares();
+            frmlista.MdiParent = this;
+            frmlista.Show();
+        }
     }
 }

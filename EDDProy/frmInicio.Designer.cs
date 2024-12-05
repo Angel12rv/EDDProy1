@@ -109,6 +109,7 @@ namespace EDDemo
             this.circularesToolStripMenuItem.Name = "circularesToolStripMenuItem";
             this.circularesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.circularesToolStripMenuItem.Text = "Circulares";
+            this.circularesToolStripMenuItem.Click += new System.EventHandler(this.circularesToolStripMenuItem_Click);
             // 
             // estructurasNoLibealesToolStripMenuItem
             // 
