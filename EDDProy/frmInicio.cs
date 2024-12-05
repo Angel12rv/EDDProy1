@@ -179,6 +179,9 @@ namespace EDDemo
 
         private void binariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmBinaria frmBinaria = new frmBinaria();
+            frmBinaria = new frmBinaria();
+            frmBinaria.Show();
         }
 
         private void secuencialToolStripMenuItem_Click(object sender, EventArgs e)
