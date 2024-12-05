@@ -133,6 +133,7 @@
     <Compile Include="Graphviz.cs" />
     <Compile Include="MetodosOrdenamiento\Clases\Burbuja.cs" />
     <Compile Include="MetodosOrdenamiento\Clases\Intercalacion.cs" />
+    <Compile Include="MetodosOrdenamiento\Clases\QuickSort.cs" />
     <Compile Include="MetodosOrdenamiento\frmBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +145,12 @@
     </Compile>
     <Compile Include="MetodosOrdenamiento\frmIntercalacion.Designer.cs">
       <DependentUpon>frmIntercalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetodosOrdenamiento\frmQuickSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetodosOrdenamiento\frmQuickSort.Designer.cs">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MetodosOrdenamiento\frmIntercalacion.resx">
       <DependentUpon>frmIntercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetodosOrdenamiento\frmQuickSort.resx">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

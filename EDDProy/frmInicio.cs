@@ -89,5 +89,12 @@ namespace EDDemo
             frmintercalacion.MdiParent = this;
             frmintercalacion.Show();
         }
+
+        private void quickSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuickSort frmquicksort = new frmQuickSort();
+            frmquicksort.MdiParent = this;
+            frmquicksort.Show();
+        }
     }
 }

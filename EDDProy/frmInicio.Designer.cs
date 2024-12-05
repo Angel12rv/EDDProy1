@@ -48,6 +48,7 @@ namespace EDDemo
             this.burbujaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.externosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.intercalacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,7 +157,8 @@ namespace EDDemo
             // internosToolStripMenuItem
             // 
             this.internosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.burbujaToolStripMenuItem});
+            this.burbujaToolStripMenuItem,
+            this.quickSortToolStripMenuItem});
             this.internosToolStripMenuItem.Name = "internosToolStripMenuItem";
             this.internosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.internosToolStripMenuItem.Text = "Internos";
@@ -182,6 +184,13 @@ namespace EDDemo
             this.intercalacionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.intercalacionToolStripMenuItem.Text = "Intercalacion";
             this.intercalacionToolStripMenuItem.Click += new System.EventHandler(this.intercalacionToolStripMenuItem_Click_1);
+            // 
+            // quickSortToolStripMenuItem
+            // 
+            this.quickSortToolStripMenuItem.Name = "quickSortToolStripMenuItem";
+            this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.quickSortToolStripMenuItem.Text = "QuickSort";
+            this.quickSortToolStripMenuItem.Click += new System.EventHandler(this.quickSortToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -228,6 +237,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem externosToolStripMenuItem;
         private ToolStripItem intercalacionToolStripMenuItem1;
         private ToolStripMenuItem intercalacionToolStripMenuItem;
+        private ToolStripMenuItem quickSortToolStripMenuItem;
     }
 }
 
