@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.MetodosOrdenamiento;
 
 namespace EDDemo
 {
@@ -73,6 +74,13 @@ namespace EDDemo
             frmListasCirculares frmlista = new frmListasCirculares();
             frmlista.MdiParent = this;
             frmlista.Show();
+        }
+
+        private void burbujaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBurbuja frmburbuja = new frmBurbuja();
+            frmburbuja.MdiParent = this;
+            frmburbuja.Show();
         }
     }
 }
