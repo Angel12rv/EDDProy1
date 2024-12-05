@@ -50,6 +50,7 @@ namespace EDDemo
             this.intercalacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shellSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,7 +161,8 @@ namespace EDDemo
             this.internosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.burbujaToolStripMenuItem,
             this.quickSortToolStripMenuItem,
-            this.radixToolStripMenuItem});
+            this.radixToolStripMenuItem,
+            this.shellSortToolStripMenuItem});
             this.internosToolStripMenuItem.Name = "internosToolStripMenuItem";
             this.internosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.internosToolStripMenuItem.Text = "Internos";
@@ -200,6 +202,13 @@ namespace EDDemo
             this.radixToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.radixToolStripMenuItem.Text = "Radix";
             this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
+            // 
+            // shellSortToolStripMenuItem
+            // 
+            this.shellSortToolStripMenuItem.Name = "shellSortToolStripMenuItem";
+            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.shellSortToolStripMenuItem.Text = "ShellSort";
+            this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -248,6 +257,7 @@ namespace EDDemo
         private ToolStripMenuItem intercalacionToolStripMenuItem;
         private ToolStripMenuItem quickSortToolStripMenuItem;
         private ToolStripMenuItem radixToolStripMenuItem;
+        private ToolStripMenuItem shellSortToolStripMenuItem;
     }
 }
 

@@ -103,5 +103,12 @@ namespace EDDemo
             frmradix.MdiParent = this;
             frmradix.Show();
         }
+
+        private void shellSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShellsort frmShellsort = new frmShellsort();
+            frmShellsort.MdiParent = this;
+            frmShellsort.Show();
+        }
     }
 }
