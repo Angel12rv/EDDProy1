@@ -154,5 +154,19 @@ namespace EDDemo
             frmTorres.MdiParent = this;
             frmTorres.Show();
         }
+
+        private void mezclaNaturalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMezclaNatural frmMezclaNatural = new frmMezclaNatural();
+            frmMezclaNatural.MdiParent = this;
+            frmMezclaNatural.Show();
+        }
+
+        private void mezclaDirectaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMezclaDirecta frmMezclaDirecta = new frmMezclaDirecta();
+            frmMezclaDirecta.MdiParent = this;
+            frmMezclaDirecta.Show();
+        }
     }
 }

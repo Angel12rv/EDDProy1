@@ -57,6 +57,12 @@ namespace EDDemo
             this.finobacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sumarArregloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.torresHannoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.busquedaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.secuencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.binariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mezclaNaturalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mezclaDirectaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +73,8 @@ namespace EDDemo
             this.estructurasLinealesToolStripMenuItem,
             this.estructurasNoLibealesToolStripMenuItem,
             this.recursividadToolStripMenuItem,
-            this.metodosDeOrdenamientoToolStripMenuItem});
+            this.metodosDeOrdenamientoToolStripMenuItem,
+            this.busquedaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 1, 0, 1);
@@ -190,7 +197,9 @@ namespace EDDemo
             // externosToolStripMenuItem
             // 
             this.externosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.intercalacionToolStripMenuItem});
+            this.intercalacionToolStripMenuItem,
+            this.mezclaNaturalToolStripMenuItem,
+            this.mezclaDirectaToolStripMenuItem});
             this.externosToolStripMenuItem.Name = "externosToolStripMenuItem";
             this.externosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.externosToolStripMenuItem.Text = "Externos";
@@ -265,6 +274,48 @@ namespace EDDemo
             this.torresHannoiToolStripMenuItem.Text = "Torres Hannoi";
             this.torresHannoiToolStripMenuItem.Click += new System.EventHandler(this.torresHannoiToolStripMenuItem_Click);
             // 
+            // busquedaToolStripMenuItem
+            // 
+            this.busquedaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.secuencialToolStripMenuItem,
+            this.binariaToolStripMenuItem,
+            this.hashToolStripMenuItem});
+            this.busquedaToolStripMenuItem.Name = "busquedaToolStripMenuItem";
+            this.busquedaToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.busquedaToolStripMenuItem.Text = "Busqueda";
+            // 
+            // secuencialToolStripMenuItem
+            // 
+            this.secuencialToolStripMenuItem.Name = "secuencialToolStripMenuItem";
+            this.secuencialToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.secuencialToolStripMenuItem.Text = "Secuencial";
+            // 
+            // binariaToolStripMenuItem
+            // 
+            this.binariaToolStripMenuItem.Name = "binariaToolStripMenuItem";
+            this.binariaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.binariaToolStripMenuItem.Text = "Binaria";
+            // 
+            // hashToolStripMenuItem
+            // 
+            this.hashToolStripMenuItem.Name = "hashToolStripMenuItem";
+            this.hashToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.hashToolStripMenuItem.Text = "Hash";
+            // 
+            // mezclaNaturalToolStripMenuItem
+            // 
+            this.mezclaNaturalToolStripMenuItem.Name = "mezclaNaturalToolStripMenuItem";
+            this.mezclaNaturalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mezclaNaturalToolStripMenuItem.Text = "Mezcla Natural";
+            this.mezclaNaturalToolStripMenuItem.Click += new System.EventHandler(this.mezclaNaturalToolStripMenuItem_Click);
+            // 
+            // mezclaDirectaToolStripMenuItem
+            // 
+            this.mezclaDirectaToolStripMenuItem.Name = "mezclaDirectaToolStripMenuItem";
+            this.mezclaDirectaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mezclaDirectaToolStripMenuItem.Text = "Mezcla Directa";
+            this.mezclaDirectaToolStripMenuItem.Click += new System.EventHandler(this.mezclaDirectaToolStripMenuItem_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
@@ -319,6 +370,12 @@ namespace EDDemo
         private ToolStripMenuItem finobacciToolStripMenuItem;
         private ToolStripMenuItem sumarArregloToolStripMenuItem;
         private ToolStripMenuItem torresHannoiToolStripMenuItem;
+        private ToolStripMenuItem mezclaNaturalToolStripMenuItem;
+        private ToolStripMenuItem mezclaDirectaToolStripMenuItem;
+        private ToolStripMenuItem busquedaToolStripMenuItem;
+        private ToolStripMenuItem secuencialToolStripMenuItem;
+        private ToolStripMenuItem binariaToolStripMenuItem;
+        private ToolStripMenuItem hashToolStripMenuItem;
     }
 }
 
