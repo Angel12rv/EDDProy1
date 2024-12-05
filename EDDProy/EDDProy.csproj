@@ -139,6 +139,9 @@
     <EmbeddedResource Include="Estructuras Lineales\frmLista.resx">
       <DependentUpon>frmLista.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmListasCirculares.resx">
+      <DependentUpon>frmListasCirculares.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\frmListasDobles.resx">
       <DependentUpon>frmListasDobles.cs</DependentUpon>
     </EmbeddedResource>
