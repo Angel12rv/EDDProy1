@@ -55,7 +55,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(172, 380);
+            this.label4.Location = new System.Drawing.Point(397, 180);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 29);
@@ -122,7 +122,7 @@
             // btnOrdenar
             // 
             this.btnOrdenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdenar.Location = new System.Drawing.Point(348, 162);
+            this.btnOrdenar.Location = new System.Drawing.Point(271, 180);
             this.btnOrdenar.Margin = new System.Windows.Forms.Padding(4);
             this.btnOrdenar.Name = "btnOrdenar";
             this.btnOrdenar.Size = new System.Drawing.Size(118, 60);
@@ -158,6 +158,7 @@
             this.Controls.Add(this.btnOrdenar);
             this.Name = "frmIntercalacion";
             this.Text = "frmIntercalacion";
+            this.Load += new System.EventHandler(this.frmIntercalacion_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

@@ -1,6 +1,6 @@
 ﻿namespace EDDemo.MetodosOrdenamiento
 {
-    partial class frmQuickSort
+    partial class frmRadix
     {
         /// <summary>
         /// Required designer variable.
@@ -43,18 +43,18 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(364, 20);
+            this.label5.Location = new System.Drawing.Point(366, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 16);
+            this.label5.Size = new System.Drawing.Size(42, 16);
             this.label5.TabIndex = 22;
-            this.label5.Text = "QuickSort";
+            this.label5.Text = "Radix";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(400, 163);
+            this.label4.Location = new System.Drawing.Point(432, 173);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 29);
@@ -66,7 +66,7 @@
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(252, 260);
+            this.panel1.Location = new System.Drawing.Point(254, 255);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 89);
@@ -90,7 +90,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(60, 183);
+            this.label2.Location = new System.Drawing.Point(62, 178);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(206, 22);
@@ -100,7 +100,7 @@
             // btnCrear
             // 
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrear.Location = new System.Drawing.Point(95, 104);
+            this.btnCrear.Location = new System.Drawing.Point(97, 99);
             this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(92, 31);
@@ -112,7 +112,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(197, 104);
+            this.numericUpDown1.Location = new System.Drawing.Point(199, 99);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(54, 57);
@@ -121,7 +121,7 @@
             // btnOrdenar
             // 
             this.btnOrdenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdenar.Location = new System.Drawing.Point(274, 163);
+            this.btnOrdenar.Location = new System.Drawing.Point(290, 160);
             this.btnOrdenar.Margin = new System.Windows.Forms.Padding(4);
             this.btnOrdenar.Name = "btnOrdenar";
             this.btnOrdenar.Size = new System.Drawing.Size(118, 60);
@@ -130,7 +130,7 @@
             this.btnOrdenar.UseVisualStyleBackColor = true;
             this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
-            // frmQuickSort
+            // frmRadix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,8 +142,8 @@
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnOrdenar);
-            this.Name = "frmQuickSort";
-            this.Text = "frmQuickSort";
+            this.Name = "frmRadix";
+            this.Text = "frmRadix";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

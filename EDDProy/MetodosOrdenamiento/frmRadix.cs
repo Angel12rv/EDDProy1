@@ -10,19 +10,12 @@ using System.Windows.Forms;
 
 namespace EDDemo.MetodosOrdenamiento
 {
-    public partial class frmBurbuja : Form
+    public partial class frmRadix : Form
     {
         private int[] arreglo;
-        private Burbuja burbuja = new Burbuja();
-        public frmBurbuja()
+        public frmRadix()
         {
             InitializeComponent();
-
-        }
-
-        private void frmBurbuja_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -33,33 +26,31 @@ namespace EDDemo.MetodosOrdenamiento
 
             for (int i = 0; i < cantidad; i++)
             {
-                arreglo[i] = random.Next(1, 100);
+                arreglo[i] = random.Next(1, 1000);
             }
 
-            label2.Text = string.Join(", ", arreglo);
+            label2.Text = $"{string.Join(", ", arreglo)}";
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
-            arreglo = burbuja.Ordenar(arreglo);
+            if (arreglo == null || arreglo.Length == 0)
+            {
+                MessageBox.Show("Primero crea el arreglo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Radix radix = new Radix();
+            radix.Ordenar(arreglo);
 
             label3.Text = "";
-            foreach (var paso in burbuja.Pasos)
+
+            foreach (var paso in radix.Pasos)
             {
-
                 label3.Text += paso + "\n";
+                label4.Text = "";
+                label4.Text += $"Arreglo ordenado: " + paso + "\n";
             }
-            label4.Text = $"Arreglo ordenado: {string.Join(", ", arreglo)}";
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

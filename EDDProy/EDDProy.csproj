@@ -152,6 +152,13 @@
     <Compile Include="MetodosOrdenamiento\frmQuickSort.Designer.cs">
       <DependentUpon>frmQuickSort.cs</DependentUpon>
     </Compile>
+    <Compile Include="MetodosOrdenamiento\Clases\Radix.cs" />
+    <Compile Include="MetodosOrdenamiento\frmRadix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetodosOrdenamiento\frmRadix.Designer.cs">
+      <DependentUpon>frmRadix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Estructuras Lineales\frmcola.resx">
@@ -186,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MetodosOrdenamiento\frmQuickSort.resx">
       <DependentUpon>frmQuickSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetodosOrdenamiento\frmRadix.resx">
+      <DependentUpon>frmRadix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -65,5 +65,10 @@ namespace EDDemo.MetodosOrdenamiento
 
             label4.Text = $"Arreglo combinado: {string.Join(", ", resultado)}";
         }
+
+        private void frmIntercalacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }

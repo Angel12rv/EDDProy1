@@ -49,6 +49,7 @@ namespace EDDemo
             this.externosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.intercalacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.radixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,7 +159,8 @@ namespace EDDemo
             // 
             this.internosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.burbujaToolStripMenuItem,
-            this.quickSortToolStripMenuItem});
+            this.quickSortToolStripMenuItem,
+            this.radixToolStripMenuItem});
             this.internosToolStripMenuItem.Name = "internosToolStripMenuItem";
             this.internosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.internosToolStripMenuItem.Text = "Internos";
@@ -191,6 +193,13 @@ namespace EDDemo
             this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quickSortToolStripMenuItem.Text = "QuickSort";
             this.quickSortToolStripMenuItem.Click += new System.EventHandler(this.quickSortToolStripMenuItem_Click);
+            // 
+            // radixToolStripMenuItem
+            // 
+            this.radixToolStripMenuItem.Name = "radixToolStripMenuItem";
+            this.radixToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.radixToolStripMenuItem.Text = "Radix";
+            this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -238,6 +247,7 @@ namespace EDDemo
         private ToolStripItem intercalacionToolStripMenuItem1;
         private ToolStripMenuItem intercalacionToolStripMenuItem;
         private ToolStripMenuItem quickSortToolStripMenuItem;
+        private ToolStripMenuItem radixToolStripMenuItem;
     }
 }
 
