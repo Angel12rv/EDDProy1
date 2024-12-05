@@ -228,36 +228,42 @@ namespace EDDemo
             this.busquedaBinariaToolStripMenuItem.Name = "busquedaBinariaToolStripMenuItem";
             this.busquedaBinariaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.busquedaBinariaToolStripMenuItem.Text = "Busqueda Binaria";
+            this.busquedaBinariaToolStripMenuItem.Click += new System.EventHandler(this.busquedaBinariaToolStripMenuItem_Click);
             // 
             // exponencialToolStripMenuItem
             // 
             this.exponencialToolStripMenuItem.Name = "exponencialToolStripMenuItem";
             this.exponencialToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exponencialToolStripMenuItem.Text = "Exponencial";
+            this.exponencialToolStripMenuItem.Click += new System.EventHandler(this.exponencialToolStripMenuItem_Click);
             // 
             // factorialToolStripMenuItem
             // 
             this.factorialToolStripMenuItem.Name = "factorialToolStripMenuItem";
             this.factorialToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.factorialToolStripMenuItem.Text = "Factorial";
+            this.factorialToolStripMenuItem.Click += new System.EventHandler(this.factorialToolStripMenuItem_Click);
             // 
             // finobacciToolStripMenuItem
             // 
             this.finobacciToolStripMenuItem.Name = "finobacciToolStripMenuItem";
             this.finobacciToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.finobacciToolStripMenuItem.Text = "Finobacci";
+            this.finobacciToolStripMenuItem.Click += new System.EventHandler(this.finobacciToolStripMenuItem_Click);
             // 
             // sumarArregloToolStripMenuItem
             // 
             this.sumarArregloToolStripMenuItem.Name = "sumarArregloToolStripMenuItem";
             this.sumarArregloToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.sumarArregloToolStripMenuItem.Text = "Sumar Arreglo";
+            this.sumarArregloToolStripMenuItem.Click += new System.EventHandler(this.sumarArregloToolStripMenuItem_Click);
             // 
             // torresHannoiToolStripMenuItem
             // 
             this.torresHannoiToolStripMenuItem.Name = "torresHannoiToolStripMenuItem";
             this.torresHannoiToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.torresHannoiToolStripMenuItem.Text = "Torres Hannoi";
+            this.torresHannoiToolStripMenuItem.Click += new System.EventHandler(this.torresHannoiToolStripMenuItem_Click);
             // 
             // frmInicio
             // 

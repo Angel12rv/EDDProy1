@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EDDemo.Recursividad.Clases
 {
-    internal class Finobacci
+    class Finobacci
     {
         public static int CalcularFibonacci(int n)
         {

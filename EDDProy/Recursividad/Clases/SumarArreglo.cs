@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EDDemo.Recursividad.Clases
 {
-    internal class SumarArreglo
+    class SumarArreglo
     {
         private static Random random = new Random();
         public static int[] GenerarArreglo(int tamaño, int min = 0, int max = 100, int[] arreglo = null, int index = 0)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EDDemo.Recursividad.Clases
 {
-    internal class Factorial
+    class Factorial
     {
        public static long CalcularFactorial(int numero)
         {

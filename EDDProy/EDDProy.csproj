@@ -172,8 +172,44 @@
     <Compile Include="Recursividad\Clases\Exponencial.cs" />
     <Compile Include="Recursividad\Clases\Factorial.cs" />
     <Compile Include="Recursividad\Clases\Finobacci.cs" />
+    <Compile Include="Recursividad\frmArreglo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\frmArreglo.Designer.cs">
+      <DependentUpon>frmArreglo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\frmFactorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\frmFactorial.Designer.cs">
+      <DependentUpon>frmFactorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Recursividad\Clases\SumarArreglo.cs" />
     <Compile Include="Recursividad\Clases\TorresHannoi.cs" />
+    <Compile Include="Recursividad\frmExponencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\frmExponencial.Designer.cs">
+      <DependentUpon>frmExponencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\frmBusquedaBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\frmBusquedaBinaria.Designer.cs">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\frmFinobacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\frmFinobacci.Designer.cs">
+      <DependentUpon>frmFinobacci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\frmTorresHannoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\frmTorresHannoi.Designer.cs">
+      <DependentUpon>frmTorresHannoi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Estructuras Lineales\frmcola.resx">
       <DependentUpon>frmcola.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +259,24 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Recursividad\frmArreglo.resx">
+      <DependentUpon>frmArreglo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\frmExponencial.resx">
+      <DependentUpon>frmExponencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\frmBusquedaBinaria.resx">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\frmFactorial.resx">
+      <DependentUpon>frmFactorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\frmFinobacci.resx">
+      <DependentUpon>frmFinobacci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\frmTorresHannoi.resx">
+      <DependentUpon>frmTorresHannoi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="external\config6">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

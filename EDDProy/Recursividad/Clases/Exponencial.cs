@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EDDemo.Recursividad.Clases
 {
-    internal class Exponencial
+    class Exponencial
     {
         public static int CalcularExponente(int baseNum, int exponente)
         {

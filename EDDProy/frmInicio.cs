@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
 using EDDemo.MetodosOrdenamiento;
+using EDDemo.Recursividad;
+using EDDemo.Recursividad.Clases;
 
 namespace EDDemo
 {
@@ -109,6 +111,48 @@ namespace EDDemo
             frmShellsort frmShellsort = new frmShellsort();
             frmShellsort.MdiParent = this;
             frmShellsort.Show();
+        }
+
+        private void busquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaBinaria frmBusqueda = new frmBusquedaBinaria();
+            frmBusqueda .MdiParent = this;
+            frmBusqueda .Show();
+        }
+
+        private void exponencialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmExponencial frmexponencial = new frmExponencial();
+            frmexponencial.MdiParent = this;   
+            frmexponencial.Show();
+        }
+
+        private void factorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFactorial frmfactorial = new frmFactorial();
+            frmfactorial.MdiParent = this;
+            frmfactorial.Show();
+        }
+
+        private void finobacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFinobacci frmfinobacci=new frmFinobacci();
+            frmfinobacci.MdiParent = this;
+            frmfinobacci.Show();
+        }
+
+        private void sumarArregloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArreglo  frmArreglo = new frmArreglo();
+            frmArreglo.MdiParent = this;
+            frmArreglo.Show();
+        }
+
+        private void torresHannoiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTorresHannoi frmTorres=new frmTorresHannoi();
+            frmTorres.MdiParent = this;
+            frmTorres.Show();
         }
     }
 }

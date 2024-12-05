@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace EDDemo.Recursividad.Clases
 {
-    internal class Torres_Hannoi
+        class Torres_Hannoi
     {
         public string Movimientos { get; set; }
 
