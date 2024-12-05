@@ -50,7 +50,7 @@ namespace EDDemo
 
         private void colasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcola mcola= new frmcola();
+            frmcola mcola = new frmcola();
             mcola.MdiParent = this;
             mcola.Show();
         }
@@ -64,7 +64,7 @@ namespace EDDemo
 
         private void dobleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          frmListasDobles frmlista = new frmListasDobles();
+            frmListasDobles frmlista = new frmListasDobles();
             frmlista.MdiParent = this;
             frmlista.Show();
         }
@@ -81,6 +81,13 @@ namespace EDDemo
             frmBurbuja frmburbuja = new frmBurbuja();
             frmburbuja.MdiParent = this;
             frmburbuja.Show();
+        }
+
+        private void intercalacionToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmIntercalacion frmintercalacion = new frmIntercalacion();
+            frmintercalacion.MdiParent = this;
+            frmintercalacion.Show();
         }
     }
 }

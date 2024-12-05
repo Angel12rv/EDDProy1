@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Windows.Forms;
+
 namespace EDDemo
 {
     partial class frmInicio
@@ -42,8 +45,9 @@ namespace EDDemo
             this.recursividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metodosDeOrdenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.internosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.externosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.burbujaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.externosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.intercalacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +74,7 @@ namespace EDDemo
             this.colasToolStripMenuItem,
             this.listasToolStripMenuItem});
             this.estructurasLinealesToolStripMenuItem.Name = "estructurasLinealesToolStripMenuItem";
-            this.estructurasLinealesToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
+            this.estructurasLinealesToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
             this.estructurasLinealesToolStripMenuItem.Text = "Estructuras lineales";
             this.estructurasLinealesToolStripMenuItem.Click += new System.EventHandler(this.estructurasLinealesToolStripMenuItem_Click);
             // 
@@ -124,7 +128,7 @@ namespace EDDemo
             this.estructurasNoLibealesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arbolesToolStripMenuItem});
             this.estructurasNoLibealesToolStripMenuItem.Name = "estructurasNoLibealesToolStripMenuItem";
-            this.estructurasNoLibealesToolStripMenuItem.Size = new System.Drawing.Size(169, 28);
+            this.estructurasNoLibealesToolStripMenuItem.Size = new System.Drawing.Size(169, 24);
             this.estructurasNoLibealesToolStripMenuItem.Text = "Estructuras no lineales";
             // 
             // arbolesToolStripMenuItem
@@ -137,7 +141,7 @@ namespace EDDemo
             // recursividadToolStripMenuItem
             // 
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
-            this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(107, 28);
+            this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
             // 
             // metodosDeOrdenamientoToolStripMenuItem
@@ -157,18 +161,27 @@ namespace EDDemo
             this.internosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.internosToolStripMenuItem.Text = "Internos";
             // 
-            // externosToolStripMenuItem
-            // 
-            this.externosToolStripMenuItem.Name = "externosToolStripMenuItem";
-            this.externosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.externosToolStripMenuItem.Text = "Externos";
-            // 
             // burbujaToolStripMenuItem
             // 
             this.burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
             this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.burbujaToolStripMenuItem.Text = "Burbuja";
             this.burbujaToolStripMenuItem.Click += new System.EventHandler(this.burbujaToolStripMenuItem_Click);
+            // 
+            // externosToolStripMenuItem
+            // 
+            this.externosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.intercalacionToolStripMenuItem});
+            this.externosToolStripMenuItem.Name = "externosToolStripMenuItem";
+            this.externosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.externosToolStripMenuItem.Text = "Externos";
+            // 
+            // intercalacionToolStripMenuItem
+            // 
+            this.intercalacionToolStripMenuItem.Name = "intercalacionToolStripMenuItem";
+            this.intercalacionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.intercalacionToolStripMenuItem.Text = "Intercalacion";
+            this.intercalacionToolStripMenuItem.Click += new System.EventHandler(this.intercalacionToolStripMenuItem_Click_1);
             // 
             // frmInicio
             // 
@@ -192,6 +205,11 @@ namespace EDDemo
 
         }
 
+        private void intercalacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem estructurasLinealesToolStripMenuItem;
@@ -208,6 +226,8 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem internosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem externosToolStripMenuItem;
+        private ToolStripItem intercalacionToolStripMenuItem1;
+        private ToolStripMenuItem intercalacionToolStripMenuItem;
     }
 }
 
