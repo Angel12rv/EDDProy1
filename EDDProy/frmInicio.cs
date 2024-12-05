@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Busqueda;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
 using EDDemo.MetodosOrdenamiento;
@@ -167,6 +168,13 @@ namespace EDDemo
             frmMezclaDirecta frmMezclaDirecta = new frmMezclaDirecta();
             frmMezclaDirecta.MdiParent = this;
             frmMezclaDirecta.Show();
+        }
+
+        private void hashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaHash frmBusquedaHash = new frmBusquedaHash();
+            frmBusquedaHash.MdiParent = this;
+            frmBusquedaHash.Show();
         }
     }
 }

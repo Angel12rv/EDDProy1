@@ -301,6 +301,7 @@ namespace EDDemo
             this.hashToolStripMenuItem.Name = "hashToolStripMenuItem";
             this.hashToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.hashToolStripMenuItem.Text = "Hash";
+            this.hashToolStripMenuItem.Click += new System.EventHandler(this.hashToolStripMenuItem_Click);
             // 
             // mezclaNaturalToolStripMenuItem
             // 

@@ -74,6 +74,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Busqueda\Clases\BusquedaHash.cs" />
+    <Compile Include="Busqueda\frmBusquedaHash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda\frmBusquedaHash.Designer.cs">
+      <DependentUpon>frmBusquedaHash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras Lineales\Clases\Cola.cs" />
     <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
     <Compile Include="Estructuras Lineales\Clases\ListasCirculares.cs" />
@@ -224,6 +231,9 @@
     <Compile Include="Recursividad\frmTorresHannoi.Designer.cs">
       <DependentUpon>frmTorresHannoi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Busqueda\frmBusquedaHash.resx">
+      <DependentUpon>frmBusquedaHash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\frmcola.resx">
       <DependentUpon>frmcola.cs</DependentUpon>
     </EmbeddedResource>
