@@ -180,7 +180,7 @@ namespace EDDemo
         private void binariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBinaria frmBinaria = new frmBinaria();
-            frmBinaria = new frmBinaria();
+            frmBinaria.MdiParent =this;
             frmBinaria.Show();
         }
 
