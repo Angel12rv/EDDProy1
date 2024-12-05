@@ -168,6 +168,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursividad\Clases\BusquedaBinaria.cs" />
+    <Compile Include="Recursividad\Clases\Exponencial.cs" />
+    <Compile Include="Recursividad\Clases\Factorial.cs" />
+    <Compile Include="Recursividad\Clases\Finobacci.cs" />
+    <Compile Include="Recursividad\Clases\SumarArreglo.cs" />
+    <Compile Include="Recursividad\Clases\TorresHannoi.cs" />
     <EmbeddedResource Include="Estructuras Lineales\frmcola.resx">
       <DependentUpon>frmcola.cs</DependentUpon>
     </EmbeddedResource>
